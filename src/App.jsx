@@ -155,7 +155,7 @@ function App() {
             {chosen != "" && (
               <animated.div
                 style={animationProps}
-                className={`absolute inset-0 ${
+                className={`absolute inset-0 z-20 ${
                   chosen === question.answer ? "bg-green-500" : "bg-red-500"
                 } flex items-center justify-center rounded-lg`}
               >
