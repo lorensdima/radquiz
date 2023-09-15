@@ -33,25 +33,25 @@ function Choices({ onData, choices, answer }) {
         onClick={() => sendChoiceToParent(finalChoices[0])}
         className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
       >
-        <p className="drop-shadow-lg">{finalChoices[0]}</p>
+        <p className="drop-shadow-lg z-0">{finalChoices[0]}</p>
       </button>
       <button
         onClick={() => sendChoiceToParent(finalChoices[1])}
         className="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded"
       >
-        <p className="drop-shadow-lg">{finalChoices[1]}</p>
+        <p className="drop-shadow-lg z-0">{finalChoices[1]}</p>
       </button>
       <button
         onClick={() => sendChoiceToParent(finalChoices[2])}
         className="bg-yellow-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 border-b-4 border-yellow-700 hover:border-yellow-500 rounded"
       >
-        <p className="drop-shadow-lg">{finalChoices[2]}</p>
+        <p className="drop-shadow-lg z-0">{finalChoices[2]}</p>
       </button>
       <button
         onClick={() => sendChoiceToParent(finalChoices[3])}
         className="bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-red-700 hover:border-red-500 rounded"
       >
-        <p className="drop-shadow-lg">{finalChoices[3]}</p>
+        <p className="drop-shadow-lg z-0">{finalChoices[3]}</p>
       </button>
     </div>
   );
