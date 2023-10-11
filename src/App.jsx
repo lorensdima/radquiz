@@ -1,17 +1,18 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import { questions1, questions2 } from "./constants";
+import { questions1, questions2, questions3 } from "./constants";
 import Choices from "./components/Choices";
 import Settings from "./components/Settings";
 import { useSpring, animated, config } from "react-spring";
 
 function App() {
+  const [dataset, setDataset] = useState([questions1, questions2, questions3]);
   const [settVis, setSettVis] = useState(false);
   const [numCorrect, setNumCorrect] = useState(0);
   const [numWrong, setNumWrong] = useState(0);
   const [index, setIndex] = useState(0);
-  const [questionsToAsk, setQuestionsToAsk] = useState(questions1);
-  const [currSetName, setCurrSetName] = useState("Set 1");
+  const [questionsToAsk, setQuestionsToAsk] = useState(dataset[0]);
+  const [currSetName, setCurrSetName] = useState(0);
   const [question, setQuestion] = useState(questionsToAsk[index]);
   const [chosen, setChosen] = useState("");
   const [wrongAnswers, setWrongAnswers] = useState([]);
@@ -57,9 +58,19 @@ function App() {
     setSettVis(data);
   };
 
-  const closeSettings = (data) => {
+  const updateSettings = (data) => {
     setSettVis(false);
-    changeQuestionToAsk(data);
+
+    if (currSetName != data.set) {
+      setQuestionsToAsk(dataset[data.set]);
+      setCurrSetName(data.set);
+      setNumWrong(0);
+      setNumCorrect(0);
+      setFinished(false);
+      setWrongAnswers([]);
+    }
+    setIndex(data.index);
+    setQuestion(dataset[data.set][data.index]);
   };
 
   const handleChoice = (data) => {
@@ -78,18 +89,7 @@ function App() {
 
   function changeQuestionToAsk(setName) {
     if (currSetName != setName) {
-      switch (setName) {
-        case "Set 1":
-          setQuestionsToAsk(questions1);
-          setQuestion(questions1[0]);
-          break;
-        case "Set 2":
-          setQuestionsToAsk(questions2);
-          setQuestion(questions2[0]);
-          break;
-        default:
-          setQuestionsToAsk(questions1);
-      }
+      setQuestionsToAsk(dataset[setName]);
       setCurrSetName(setName);
       setIndex(0);
       setNumWrong(0);
@@ -113,7 +113,9 @@ function App() {
     <>
       {settVis && (
         <Settings
-          toggle={closeSettings}
+          update={updateSettings}
+          toggle={toggleSettings}
+          dataset={dataset}
           currSetName={currSetName}
           currNumItems={questionsToAsk.length}
         />
@@ -171,6 +173,21 @@ function App() {
                 </p>
               </animated.div>
             )}
+            <div
+              className={
+                question.image
+                  ? "h-64 flex items-center justify-center my-5"
+                  : "hidden"
+              }
+            >
+              {question.image && (
+                <img
+                  src={question.image}
+                  alt=""
+                  className="h-40 md:h-60 lg:h-80 xl:h-96 h-auto p-3 mb-2"
+                />
+              )}
+            </div>
             <p>{question.question}</p>
             <Choices
               choices={question.choices}
@@ -221,18 +238,18 @@ function App() {
                   {dataItem.answer}
                 </p>
                 <p className="text-gray-600">{dataItem.question}</p>
-                <div class="absolute left-2 right-0 top-[-20px] bg-blue-500 rounded-full w-1/5 text-white text-center">
-                  <span class="text-1xl font-bold">{index + 1}</span>
+                <div className="absolute left-2 right-0 top-[-20px] bg-blue-500 rounded-full w-1/5 text-white text-center">
+                  <span className="text-1xl font-bold">{index + 1}</span>
                 </div>
               </div>
             ))}
           </div>
         </div>
       )}
-      <footer class="text-white py-4 bottom-0">
-        <div class="container mx-auto flex items-center justify-center">
-          <p class="text-sm">
-            Made with <span class="text-red-500">&hearts;</span>
+      <footer className="text-white py-4 bottom-0">
+        <div className="container mx-auto flex items-center justify-center">
+          <p className="text-sm">
+            Made with <span className="text-red-500">&hearts;</span>
           </p>
         </div>
       </footer>

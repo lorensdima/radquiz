@@ -553,4 +553,75 @@ const questions2 = [
   },
 ];
 
-export { questions1, questions2 };
+const questions3 = [
+  {
+    question: "Give the position based on the picture.",
+    answer: "AP Axial Ankle",
+    choices: ["AP Ankle", "Lateral Ankle", "Mortise View of Ankle"],
+    image: "./assets/set3/s3n1.jpeg",
+  },
+  {
+    question: "What is the correct position for a lateral view of the skull?",
+    answer: "Lying on the side, with the head centered on the X-ray table.",
+    choices: [
+      "Lying on the back, with the head centered on the X-ray table and turned to the side.",
+      "Lying on the stomach, with the head centered on the X-ray table and turned to the side.",
+      "Sitting upright, with the head centered on the X-ray table and turned to the side.",
+    ],
+  },
+  {
+    question:
+      "What is the correct position for an anteroposterior (AP) view of the chest?",
+    answer:
+      "Standing upright, with the arms raised above the head and the chin tucked in.",
+    choices: [
+      "Sitting upright, with the arms resting on the lap.",
+      "Lying on the back, with the arms at the sides and the chin tucked in.",
+      "Lying on the stomach, with the arms at the sides.",
+    ],
+  },
+  {
+    question: "What is the correct position for a lateral view of the spine?",
+    answer:
+      "Standing upright, with the back against the X-ray cassette and the arms at the sides.",
+    choices: [
+      "Lying on the back, with the arms at the sides and the legs extended.",
+      "Lying on the stomach, with the arms at the sides and the legs extended.",
+      "Sitting upright, with the arms resting on the lap.",
+    ],
+  },
+  {
+    question:
+      "What is the correct position for a computed tomography (CT) scan of the abdomen?",
+    answer:
+      "Lying on the back, with the arms raised above the head and the chin tucked in.",
+    choices: [
+      "Lying on the back, with the arms at the sides and the legs extended.",
+      "Lying on the stomach, with the arms at the sides and the legs extended.",
+      "Sitting upright, with the arms resting on the lap.",
+    ],
+  },
+  {
+    question:
+      "What is the correct position for a magnetic resonance imaging (MRI) scan of the brain?",
+    answer:
+      "Lying on the back, with the head centered in the MRI bore and the arms at the sides.",
+    choices: [
+      "Lying on the stomach, with the head centered in the MRI bore and the arms at the sides.",
+      "Sitting upright, with the head centered in the MRI bore and the arms at the sides.",
+      "Standing upright, with the head centered in the MRI bore and the arms at the sides.",
+    ],
+  },
+  {
+    question: "What is the correct position for a mammogram?",
+    answer:
+      "The patient is positioned standing, upright, with the affected breast centered on the X-ray cassette and the arm raised above the head.",
+    choices: [
+      "The patient is positioned lying on the back, with the affected breast centered on the X-ray cassette and the arm raised above the head.",
+      "The patient is positioned sitting upright, with the affected breast centered on the X-ray cassette and the arm raised above the head.",
+      "The patient is positioned lying on the stomach, with the affected breast centered on the X-ray cassette and the arm raised above the head.",
+    ],
+  },
+];
+
+export { questions1, questions2, questions3 };
