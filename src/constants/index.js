@@ -572,7 +572,7 @@ const questions3 = [
   },
   {
     question:
-      "Determine the missing step for Patient Positioning: <br> 1. Place the patient on their back on the X-ray table. <br> 2. BLANK <br> 3. Raise the patient's head using a foam wedge so that the brow ridge is parallel to the X-ray table. <br> 4. Center the patient's head in the X-ray beam.",
+      "Determine the missing Patient Positioning step for Lateral skull brow-up position: <br> 1. Place the patient on their back on the X-ray table. <br> 2. BLANK <br> 3. Raise the patient's head using a foam wedge so that the brow ridge is parallel to the X-ray table. <br> 4. Center the patient's head in the X-ray beam.",
     answer:
       "Position the patient's head so that the midsagittal plane is perpendicular to the X-ray table.",
     choices: [
@@ -603,7 +603,7 @@ const questions3 = [
   },
   {
     question:
-      "Determine the patient positioning step: <br> 1. Position the patient in a sitting position on the X-ray table. <br> 2. Place the patient's back against the upright Bucky. <br> 3. BLANK <br> 4. Center the patient's neck in the X-ray beam.",
+      "Determine the missing Patient Positioning step for Sitting lateral cervical spine position: <br> 1. Position the patient in a sitting position on the X-ray table. <br> 2. Place the patient's back against the upright Bucky. <br> 3. BLANK <br> 4. Center the patient's neck in the X-ray beam.",
     answer: "Position the patient's chin slightly elevated and neck extended.",
     choices: [
       "Elevate the patient's feet using a foam wedge.",
@@ -634,7 +634,7 @@ const questions3 = [
   },
   {
     question:
-      "Determine the patient positioning step: <br> 1. Place the patient on their back on the X-ray table. <br> 2. BLANK <br> 3. Center the patient's spine in the X-ray beam.",
+      "Determine the missing Patient Positioning step for Supine transthoracic spine position: <br> 1. Place the patient on their back on the X-ray table. <br> 2. BLANK <br> 3. Center the patient's spine in the X-ray beam.",
     answer: "Position the patient's arms at their sides.",
     choices: [
       "Raise the patient's head using a foam wedge.",
@@ -664,7 +664,7 @@ const questions3 = [
   },
   {
     question:
-      "Determine the patient positioning step: <br> 1. Place the patient on their stomach on the X-ray table. <br> 2. BLANK <br> 3. Center the patient's spine in the X-ray beam.",
+      "Determine the missing Patient Positioning step for Prone lateral lumbar spine position: <br> 1. Place the patient on their stomach on the X-ray table. <br> 2. BLANK <br> 3. Center the patient's spine in the X-ray beam.",
     answer:
       "Position the patient's arms at their sides. Place a foam wedge under the patient's abdomen to raise the spine off the table.",
     choices: [
@@ -695,7 +695,7 @@ const questions3 = [
   },
   {
     question:
-      "Determine the patient positioning step: <br> 1. Position the patient in a standing position with their back against the upright Bucky. <br> 2. BLANK <br> 3. 4. Center the patient's pelvis in the X-ray beam.",
+      "Determine the missing Patient Positioning step for Standing frontal pelvis positions: <br> 1. Position the patient in a standing position with their back against the upright Bucky. <br> 2. BLANK <br> 3. 4. Center the patient's pelvis in the X-ray beam.",
     answer:
       "Place the patient's feet shoulder-width apart and their toes pointed inward slightly. Position the patient's arms at their sides.",
     choices: [
