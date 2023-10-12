@@ -188,7 +188,7 @@ function App() {
                 />
               )}
             </div>
-            <p>{question.question}</p>
+            <p dangerouslySetInnerHTML={{ __html: question.question }} />
             <Choices
               choices={question.choices}
               answer={question.answer}
@@ -234,10 +234,28 @@ function App() {
           <div className="flex flex-wrap items-center">
             {wrongAnswers.map((dataItem, index) => (
               <div className="relative bg-white rounded-sm shadow-lg p-3 m-5 w-full md:w-1/5">
+                <div
+                  className={
+                    dataItem.image
+                      ? "h-64 flex items-center justify-center my-5"
+                      : "hidden"
+                  }
+                >
+                  {dataItem.image && (
+                    <img
+                      src={dataItem.image}
+                      alt=""
+                      className="h-40 md:h-60 lg:h-80 xl:h-96 h-auto p-3 mb-2"
+                    />
+                  )}
+                </div>
                 <p className="text-black font-semibold mb-1">
                   {dataItem.answer}
                 </p>
-                <p className="text-gray-600">{dataItem.question}</p>
+                <p
+                  className="text-gray-600"
+                  dangerouslySetInnerHTML={{ __html: dataItem.question }}
+                />
                 <div className="absolute left-2 right-0 top-[-20px] bg-blue-500 rounded-full w-1/5 text-white text-center">
                   <span className="text-1xl font-bold">{index + 1}</span>
                 </div>

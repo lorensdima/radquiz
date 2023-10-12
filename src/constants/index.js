@@ -561,65 +561,157 @@ const questions3 = [
     image: "./assets/set3/s3n1.jpeg",
   },
   {
-    question: "What is the correct position for a lateral view of the skull?",
-    answer: "Lying on the side, with the head centered on the X-ray table.",
+    question: "Identify the radiologic position based on the image.",
+    answer: "Lateral skull brow-up position",
     choices: [
-      "Lying on the back, with the head centered on the X-ray table and turned to the side.",
-      "Lying on the stomach, with the head centered on the X-ray table and turned to the side.",
-      "Sitting upright, with the head centered on the X-ray table and turned to the side.",
+      "Lateral thoracic spine position",
+      "Lateral cervical spine position",
+      "Supine lumbar spine position",
+    ],
+    image: "./assets/set3/lateral_skull_browup.jpeg",
+  },
+  {
+    question:
+      "Determine the missing step for Patient Positioning: <br> 1. Place the patient on their back on the X-ray table. <br> 2. BLANK <br> 3. Raise the patient's head using a foam wedge so that the brow ridge is parallel to the X-ray table. <br> 4. Center the patient's head in the X-ray beam.",
+    answer:
+      "Position the patient's head so that the midsagittal plane is perpendicular to the X-ray table.",
+    choices: [
+      "Align the patient's feet with the X-ray table.",
+      "Elevate the patient's feet using a foam wedge.",
+      "Position the patient's head parallel to the X-ray table.",
     ],
   },
   {
     question:
-      "What is the correct position for an anteroposterior (AP) view of the chest?",
-    answer:
-      "Standing upright, with the arms raised above the head and the chin tucked in.",
+      "What are the technical factors for Lateral skull brow-up position?",
+    answer: "SID: 40 inches, kVp: 75, mAs: 200",
     choices: [
-      "Sitting upright, with the arms resting on the lap.",
-      "Lying on the back, with the arms at the sides and the chin tucked in.",
-      "Lying on the stomach, with the arms at the sides.",
+      "SID: 30 inches, kVp: 60, mAs: 150",
+      "SID: 45 inches, kVp: 70, mAs: 250",
+      "SID: 35 inches, kVp: 80, mAs: 180",
     ],
   },
   {
-    question: "What is the correct position for a lateral view of the spine?",
-    answer:
-      "Standing upright, with the back against the X-ray cassette and the arms at the sides.",
+    question: "Choose the correct radiologic position:",
+    answer: "Sitting lateral cervical spine position",
     choices: [
-      "Lying on the back, with the arms at the sides and the legs extended.",
-      "Lying on the stomach, with the arms at the sides and the legs extended.",
-      "Sitting upright, with the arms resting on the lap.",
+      "Prone lateral lumbar spine position",
+      "Supine thoracic spine position",
+      "Standing frontal pelvis position",
+    ],
+    image: "./assets/set3/Sitting lateral cervical spine position.jpeg",
+  },
+  {
+    question:
+      "Determine the patient positioning step: <br> 1. Position the patient in a sitting position on the X-ray table. <br> 2. Place the patient's back against the upright Bucky. <br> 3. BLANK <br> 4. Center the patient's neck in the X-ray beam.",
+    answer: "Position the patient's chin slightly elevated and neck extended.",
+    choices: [
+      "Elevate the patient's feet using a foam wedge.",
+      "Align the patient's feet with the X-ray table.",
+      "Raise the patient's head using a foam wedge.",
     ],
   },
   {
     question:
-      "What is the correct position for a computed tomography (CT) scan of the abdomen?",
-    answer:
-      "Lying on the back, with the arms raised above the head and the chin tucked in.",
+      "What are the technical factors for Sitting lateral cervical spine position?",
+    answer: "SID: 40 inches, kVp: 70, mAs: 200",
     choices: [
-      "Lying on the back, with the arms at the sides and the legs extended.",
-      "Lying on the stomach, with the arms at the sides and the legs extended.",
-      "Sitting upright, with the arms resting on the lap.",
+      "SID: 45 inches, kVp: 80, mAs: 180",
+      "SID: 35 inches, kVp: 75, mAs: 220",
+      "SID: 40 inches, kVp: 75, mAs: 250",
+    ],
+  },
+  {
+    question: "Which radiologic position is presented?",
+    answer: "Supine transthoracic spine position",
+    choices: [
+      "Sitting cervical spine position",
+      "Prone cervical spine position",
+      "Supine lumbar spine position",
+      "Lateral thoracic spine position",
+    ],
+    image: "./assets/set3/Supine transthoracic spine position.jpeg",
+  },
+  {
+    question:
+      "Determine the patient positioning step: <br> 1. Place the patient on their back on the X-ray table. <br> 2. BLANK <br> 3. Center the patient's spine in the X-ray beam.",
+    answer: "Position the patient's arms at their sides.",
+    choices: [
+      "Raise the patient's head using a foam wedge.",
+      "Align the patient's feet with the X-ray table.",
+      "Place a foam wedge under the patient's abdomen.",
     ],
   },
   {
     question:
-      "What is the correct position for a magnetic resonance imaging (MRI) scan of the brain?",
-    answer:
-      "Lying on the back, with the head centered in the MRI bore and the arms at the sides.",
+      "What are the technical factors for Supine transthoracic spine position?",
+    answer: "SID: 72 inches, kVp: 80, mAs: 400",
     choices: [
-      "Lying on the stomach, with the head centered in the MRI bore and the arms at the sides.",
-      "Sitting upright, with the head centered in the MRI bore and the arms at the sides.",
-      "Standing upright, with the head centered in the MRI bore and the arms at the sides.",
+      "SID: 75 inches, kVp: 85, mAs: 350",
+      "SID: 70 inches, kVp: 75, mAs: 450",
+      "SID: 72 inches, kVp: 90, mAs: 380",
     ],
   },
   {
-    question: "What is the correct position for a mammogram?",
-    answer:
-      "The patient is positioned standing, upright, with the affected breast centered on the X-ray cassette and the arm raised above the head.",
+    question: "Select the correct radiologic position:",
+    answer: "Prone lateral lumbar spine position",
     choices: [
-      "The patient is positioned lying on the back, with the affected breast centered on the X-ray cassette and the arm raised above the head.",
-      "The patient is positioned sitting upright, with the affected breast centered on the X-ray cassette and the arm raised above the head.",
-      "The patient is positioned lying on the stomach, with the affected breast centered on the X-ray cassette and the arm raised above the head.",
+      "Sitting lateral cervical spine position",
+      "Supine transthoracic spine position",
+      "Prone cervical spine position",
+    ],
+    image: "./assets/set3/Prone lateral lumbar spine position.jpeg",
+  },
+  {
+    question:
+      "Determine the patient positioning step: <br> 1. Place the patient on their stomach on the X-ray table. <br> 2. BLANK <br> 3. Center the patient's spine in the X-ray beam.",
+    answer:
+      "Position the patient's arms at their sides. Place a foam wedge under the patient's abdomen to raise the spine off the table.",
+    choices: [
+      "Elevate the patient's feet using a foam wedge.",
+      "Align the patient's feet with the X-ray table.",
+      "Raise the patient's head using a foam wedge.",
+    ],
+  },
+  {
+    question:
+      "What are the technical factors for Prone lateral lumbar spine position?",
+    answer: "SID: 40 inches, kVp: 80, mAs: 400",
+    choices: [
+      "SID: 45 inches, kVp: 85, mAs: 350",
+      "SID: 35 inches, kVp: 75, mAs: 450",
+      "SID: 40 inches, kVp: 90, mAs: 380",
+    ],
+  },
+  {
+    question: "Give the name of the radiologic position shown in the image.",
+    answer: "Standing frontal pelvis position",
+    choices: [
+      "Supine hip position",
+      "Prone lateral lumbar spine position",
+      "Sitting lateral cervical spine position",
+    ],
+    image: "./assets/set3/Standing frontal pelvis position.jpeg",
+  },
+  {
+    question:
+      "Determine the patient positioning step: <br> 1. Position the patient in a standing position with their back against the upright Bucky. <br> 2. BLANK <br> 3. 4. Center the patient's pelvis in the X-ray beam.",
+    answer:
+      "Place the patient's feet shoulder-width apart and their toes pointed inward slightly. Position the patient's arms at their sides.",
+    choices: [
+      "Elevate the patient's feet using a foam wedge.",
+      "Align the patient's feet with the X-ray table.",
+      "Raise the patient's head using a foam wedge.",
+    ],
+  },
+  {
+    question:
+      "What are the technical factors for Standing frontal pelvis position?",
+    answer: "SID: 40 inches, kVp: 85, mAs: 300",
+    choices: [
+      "SID: 45 inches, kVp: 90, mAs: 280",
+      "SID: 35 inches, kVp: 80, mAs: 320",
+      "SID: 40 inches, kVp: 90, mAs: 310",
     ],
   },
 ];
